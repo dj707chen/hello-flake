@@ -16,9 +16,7 @@
         }
       );
   in {
-    packages.x86_64-linux.default   = mkHello "x86_64-linux";
     packages.aarch64-darwin.default = mkHello "aarch64-darwin";
-    defaultPackage.x86_64-linux     = mkHello "x86_64-linux";
-    defaultPackage.aarch64-darwin   = mkHello "aarch64-darwin";
+    packages.x86_64-linux.default   = mkHello "x86_64-linux";
   };
 }
