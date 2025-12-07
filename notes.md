@@ -12,8 +12,9 @@ nix flake lock --update-input nixpkgs
 nix flake update
 
 # To wrap things up, we can now commit our project and push it to GitHub, after making sure that everything is in order:
-nix flake check
+nix flake check --all-systems
 
+nix shell github:dj707chen/hello -c hello
 ```
 
 So what does all that stuff in flake.nix mean?
