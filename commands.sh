@@ -4,3 +4,5 @@
 echo 'int main() { printf("Hello World"); }' > hello.c
 
 # To turn this Git repository into a flake, we add a file named flake.nix at the root of the repository with the following contents:
+
+nix build
