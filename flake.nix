@@ -8,7 +8,7 @@
     mkHello = system:
       (with import nixpkgs { inherit system; };
         stdenv.mkDerivation {
-          name = "hello";
+          name = "hello-flake";
           src = ./.;
           nativeBuildInputs = [ gcc ];
           buildPhase = "gcc -o hello ./hello.c";
